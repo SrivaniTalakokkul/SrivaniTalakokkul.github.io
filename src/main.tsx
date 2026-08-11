@@ -15,6 +15,7 @@ const links = [
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [showAllRoles, setShowAllRoles] = useState(false)
+  const baseUrl = import.meta.env.BASE_URL
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -35,7 +36,7 @@ function App() {
         </a>
         <nav className={menuOpen ? 'nav open' : 'nav'} aria-label="Primary navigation">
           {links.map(([label, id]) => <a key={id} href={`#${id}`} onClick={() => setMenuOpen(false)}>{label}</a>)}
-          <a className="nav-cta" href="/Srivani_Talakokkul_Resume.pdf" download>Résumé <Download size={15} /></a>
+          <a className="nav-cta" href={`${baseUrl}Srivani_Talakokkul_Resume.pdf`} download>Résumé <Download size={15} /></a>
         </nav>
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu" aria-expanded={menuOpen}>
           {menuOpen ? <X /> : <Menu />}
@@ -62,7 +63,7 @@ function App() {
           <div className="hero-portrait reveal is-visible">
             <div className="portrait-frame">
               <div className="portrait-art">
-                <img src="/headshot.jpeg" alt="Srivani Talakokkul" />
+                <img src={`${baseUrl}headshot.jpeg`} alt="Srivani Talakokkul" />
                 <span className="portrait-caption">Public health<br />with purpose</span>
               </div>
               <a className="verified-pill" href="https://medicine.yale.edu/profile/srivani-talakokkul/" target="_blank" rel="noreferrer">
@@ -203,7 +204,7 @@ function App() {
 
       <footer>
         <a className="brand footer-brand" href="#top"><span className="brand-mark">ST</span><span>Srivani Talakokkul, MPH</span></a>
-        <p>Public health · Research operations · Clinical AI</p>
+        <p>Public health · Research operations · Health data</p>
         <p>© {new Date().getFullYear()} Srivani Talakokkul</p>
       </footer>
     </>
