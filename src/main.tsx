@@ -49,7 +49,7 @@ function App() {
           <div className="hero-copy reveal is-visible">
             <p className="eyebrow"><span /> Public health × research operations × health data</p>
             <h1>Public health, research, and the <em>work between.</em></h1>
-            <p className="hero-intro">Srivani Talakokkul, MPH, is a Yale program administrator and public-health professional with experience in clinical care, health data, program operations, and interdisciplinary research support.</p>
+            <p className="hero-intro">Srivani Talakokkul, MPH, is a Yale Program Manager and clinician-trained public-health professional with experience across healthcare, public health, grant operations, and interdisciplinary research.</p>
             <div className="hero-actions">
               <a className="button primary" href="#research">Explore research <ArrowDown size={17} /></a>
               <a className="button secondary" href="mailto:srivani.talakokkul@yale.edu">Start a conversation <ArrowUpRight size={17} /></a>
@@ -74,10 +74,10 @@ function App() {
         </section>
 
         <section className="impact-strip" aria-label="Career highlights">
-          <div><strong>6+</strong><span>Years across health systems</span></div>
-          <div><strong>8</strong><span>Coauthored publications & abstracts</span></div>
+          <div><strong>7+</strong><span>Years across healthcare and research</span></div>
+          <div><strong>7</strong><span>Publications listed in the résumé</span></div>
           <div><strong>3.96</strong><span>MPH graduate GPA</span></div>
-          <div><strong>20–30%</strong><span>Workflow efficiency gains</span></div>
+          <div><strong>$4.5M</strong><span>Grant-funded initiatives supported</span></div>
         </section>
 
         <section className="section about" id="about">
@@ -87,17 +87,17 @@ function App() {
               <h2>Clinical experience.<br />Public-health practice.<br />Research operations.</h2>
             </div>
             <div className="about-copy reveal">
-              <p className="lead">Srivani’s experience spans clinical care, public-health programs, research quality, and program administration.</p>
+              <p className="lead">Srivani’s experience spans clinical care, public-health programs, research quality, grant operations, and program management.</p>
               <p>Her background includes Ayurvedic medicine and clinical practice, an MPH with Global Health certification, a health-equity internship, and cancer-data quality work.</p>
-              <p>At Yale’s Fodeh Lab, she supports interdisciplinary teams and the data and annotation workflows used in research on patient-provider communication and clinical NLP.</p>
+              <p>At Yale, she manages research operations across two major grant-funded initiatives, supports a six-person core team, coordinates external collaborators, and develops structured workflows for AI/NLP research.</p>
               <a className="text-link" href="https://medicine.yale.edu/lab/fodeh/lab-members/" target="_blank" rel="noreferrer">Meet the Fodeh Lab team <ArrowUpRight size={16} /></a>
             </div>
           </div>
 
           <div className="focus-grid">
             {[
-              [<Microscope />, 'Research support', 'Coordinating annotation, metadata, data preparation, and reporting for interdisciplinary research projects.'],
-              [<Sparkles />, 'Program operations', 'Supporting schedules, finances, events, communications, people, and project deliverables.'],
+              [<Microscope />, 'Research operations', 'Coordinating timelines, deliverables, data workflows, reporting, and documentation across grant-funded research initiatives.'],
+              [<Sparkles />, 'Grant management', 'Tracking budgets, expenses, subawards, milestones, NIH RPPR reporting, and PCORI progress reporting.'],
               [<HeartHandshake />, 'Health equity experience', 'Contributing to demographic data-standard assessment and public-facing health communication.'],
               [<ShieldCheck />, 'Quality & compliance', 'Experience with clinical data auditing, protocol adherence, documentation, and corrective training.']
             ].map(([icon, title, text]) => (
@@ -110,7 +110,7 @@ function App() {
 
         <section className="section research" id="research">
           <div className="research-heading reveal">
-            <div><div className="section-kicker light">02 · Research</div><h2>Research grounded in the patient voice.</h2></div>
+              <div><div className="section-kicker light">02 · Research</div><h2>Research grounded in the patient voice.</h2></div>
             <p>Coauthored work examining patient-provider communication, patient voice, and structured information extraction from health data.</p>
           </div>
           <div className="research-feature reveal">
@@ -129,7 +129,7 @@ function App() {
             {publications.slice(1).map((pub, index) => (
               <article className="publication-card reveal" key={pub.title}>
                 <div className="paper-number">0{index + 2}</div>
-                <span className={`status ${pub.type === 'Conference abstract' ? 'conference' : ''}`}>{pub.type}</span>
+                <span className="status">{pub.type}</span>
                 <h3>{pub.title}</h3>
                 <p>{pub.summary}</p>
                 {pub.contribution && <small>Credited contribution: {pub.contribution}</small>}
@@ -137,12 +137,12 @@ function App() {
               </article>
             ))}
           </div>
-          <p className="source-note">Publication status and dates verified against publisher, arXiv, and AMIA records · Updated August 2026</p>
+          <p className="source-note">Publication status and dates verified against publisher and arXiv records · Updated August 2026</p>
         </section>
 
         <section className="section experience" id="experience">
           <div className="section-kicker reveal">03 · Experience</div>
-          <div className="section-heading split reveal"><h2>Experience across clinical care and public health.</h2><p>Roles in patient care, health-equity work, data quality, administration, and research operations.</p></div>
+          <div className="section-heading split reveal"><h2>Experience across clinical care and research management.</h2><p>Roles in patient care, health-equity work, data quality, administration, grant operations, and research delivery.</p></div>
           <div className="timeline">
             {(showAllRoles ? experience : experience.slice(0, 5)).map((item, index) => (
               <article className="timeline-item reveal" key={`${item.role}-${item.organization}`}>
@@ -164,7 +164,7 @@ function App() {
           <div className="section-kicker reveal">04 · Credentials & capabilities</div>
           <div className="credential-layout">
             <div className="education-column reveal">
-              <h2>Education that bridges medicine and population health.</h2>
+              <h2>Education that bridges medicine, public health, and research management.</h2>
               <div className="degree-card featured-degree">
                 <GraduationCap /><span>2022 — 2024</span><h3>Master of Public Health</h3><p>University of New Haven</p><div className="degree-notes"><strong>3.96 GPA</strong><strong>Global Health certificate</strong></div>
               </div>

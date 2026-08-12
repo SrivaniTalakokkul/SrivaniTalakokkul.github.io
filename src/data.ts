@@ -9,7 +9,7 @@ export type Experience = {
 
 export type Publication = {
   title: string
-  type: 'Journal article' | 'Preprint' | 'Conference abstract'
+  type: 'Journal article' | 'Preprint'
   date: string
   url: string
   summary: string
@@ -18,27 +18,30 @@ export type Publication = {
 
 export const experience: Experience[] = [
   {
-    role: 'Program Administrator',
+    role: 'Program Manager',
     organization: 'Yale University · Emergency Medicine · Fodeh Lab',
     period: 'Nov 2024 — Present',
     location: 'New Haven, Connecticut',
-    summary: 'Supporting the operations and data workflows behind interdisciplinary clinical NLP research.',
+    summary: 'Managing day-to-day research operations across two grant-funded initiatives totaling approximately $4.5M.',
     highlights: [
-      'Streamlined annotation workflows and metadata documentation, improving efficiency by 20–30%.',
-      'Coordinates preprocessing, organization, reporting, finances, scheduling, reimbursements, and stakeholder communication.',
-      'Supports postdoctoral researchers, research assistants, and interns across timelines and deliverables.'
+      'Coordinates timelines, deliverables, budgets, data workflows, collaborators, and reporting for R01- and PCORI-funded initiatives.',
+      'Supervises a 6-person core research team of five postdoctoral researchers and one research associate, plus interns and PhD rotation students.',
+      'Coordinates collaborations across Yale University, Cleveland Clinic, Veterans Health Administration, and Texas Association of Charitable Clinics.',
+      'Oversees budget tracking, reconciliation, expenses, subawards, NIH RPPR reporting, PCORI progress reports, and presentations.',
+      'Developed annotation manuals, codebooks, ontologies, and metadata workflows; improved annotation and documentation efficiency by 25–30%.',
+      'Coauthored six peer-reviewed and preprint publications and coordinates Community Advisory Board engagement.'
     ]
   },
   {
     role: 'Administrative Assistant',
     organization: 'Quality Staffing Home Care Agency',
-    period: 'Oct 2024 — Present',
+    period: 'Oct 2024 — Jan 2025',
     location: 'United States',
-    summary: 'Providing administrative support across records, payroll, scheduling, and communications for a home-care agency.',
+    summary: 'Provided administrative support across records, payroll, scheduling, credentialing, and communications for a home-care agency.',
     highlights: [
       'Processes bi-weekly payroll for more than 50 administrative and caregiver employees.',
       'Maintains client and employee records in AxisCare and Alora and coordinates credentialing requirements.',
-      'Creates business collateral and supports scheduling, correspondence, and document preparation.'
+      'Created business collateral and managed licensing and grant-application documentation for the agency and training school.'
     ]
   },
   {
@@ -168,13 +171,6 @@ export const publications: Publication[] = [
     url: 'https://arxiv.org/abs/2602.21165',
     summary: 'A domain-adapted NLP framework that structures patient voice across communication and social-determinant categories.'
   },
-  {
-    title: 'EPPCMinerBen: A Novel Benchmark for Evaluating Large Language Models in Cancer Care',
-    type: 'Conference abstract',
-    date: 'AMIA Annual Symposium · Nov 2025',
-    url: 'https://amia.secure-platform.com/symposium/gallery/rounds/82021/details/19530',
-    summary: 'A coauthored podium abstract on analysis of patient–provider communication in cancer-care portal messages.'
-  }
 ]
 
 export const skillGroups = [
