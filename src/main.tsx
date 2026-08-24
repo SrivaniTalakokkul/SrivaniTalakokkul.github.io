@@ -169,7 +169,7 @@ function App() {
                 <GraduationCap /><span>2022 — 2024</span><h3>Master of Public Health</h3><p>University of New Haven</p><div className="degree-notes"><strong>3.96 GPA</strong><strong>Global Health certificate</strong></div>
               </div>
               <div className="degree-card">
-                <GraduationCap /><span>2017 — 2019</span><h3>Bachelor of Ayurvedic Medicine & Surgery</h3><p>R. A. Podar Medical College · Mumbai</p><div className="degree-notes"><strong>1st rank</strong><strong>70.27%</strong></div>
+                <GraduationCap /><span>2013 — 2019</span><h3>Bachelor of Ayurvedic Medicine & Surgery</h3><p>R. A. Podar Medical College · Mumbai</p><div className="degree-notes"><strong>1st rank</strong><strong>70.27%</strong></div>
               </div>
             </div>
             <div className="recognition-column reveal">
