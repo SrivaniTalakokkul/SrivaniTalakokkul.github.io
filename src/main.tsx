@@ -49,10 +49,10 @@ function App() {
           <div className="hero-copy reveal is-visible">
             <p className="eyebrow"><span /> Public health × research operations × health data</p>
             <h1>Public health, research, and the <em>work between.</em></h1>
-            <p className="hero-intro">Srivani Talakokkul, MPH, is a Yale Program Manager and clinician-trained public-health professional with experience across healthcare, public health, grant operations, and interdisciplinary research.</p>
+            <p className="hero-intro">Srivani Talakokkul, MPH, is a Healthcare Program Manager with 7+ years of experience across research operations, clinical care delivery, public health, and quality management — currently stewarding a $4.5M portfolio at Yale University.</p>
             <div className="hero-actions">
               <a className="button primary" href="#research">Explore research <ArrowDown size={17} /></a>
-              <a className="button secondary" href="mailto:srivani.talakokkul@yale.edu">Start a conversation <ArrowUpRight size={17} /></a>
+              <a className="button secondary" href="mailto:talakokkulsrivani06@gmail.com">Start a conversation <ArrowUpRight size={17} /></a>
             </div>
             <div className="quick-info">
               <span><MapPin size={15} /> New Haven, Connecticut</span>
@@ -74,10 +74,10 @@ function App() {
         </section>
 
         <section className="impact-strip" aria-label="Career highlights">
-          <div><strong>7+</strong><span>Years across healthcare and research</span></div>
-          <div><strong>7</strong><span>Publications listed in the résumé</span></div>
-          <div><strong>3.96</strong><span>MPH graduate GPA</span></div>
-          <div><strong>$4.5M</strong><span>Grant-funded initiatives supported</span></div>
+          <div><strong>$4.5M</strong><span>Portfolio managed</span></div>
+          <div><strong>100%</strong><span>On-time sponsor reporting</span></div>
+          <div><strong>4</strong><span>Institutions coordinated</span></div>
+          <div><strong>7</strong><span>Publications supported</span></div>
         </section>
 
         <section className="section about" id="about">
@@ -89,17 +89,17 @@ function App() {
             <div className="about-copy reveal">
               <p className="lead">Srivani’s experience spans clinical care, public-health programs, research quality, grant operations, and program management.</p>
               <p>Her background includes Ayurvedic medicine and clinical practice, an MPH with Global Health certification, a health-equity internship, and cancer-data quality work.</p>
-              <p>At Yale, she manages research operations across two major grant-funded initiatives, supports a six-person core team, coordinates external collaborators, and develops structured workflows for AI/NLP research.</p>
+              <p>At Yale, she stewards a $4.5M portfolio spanning an NIH R01 (EPPC) and a PCORI-funded study (PVminer), sustaining a 100% on-time record for sponsor reporting across two consecutive years. She builds and mobilizes an 8-person research team, coordinates 4 partner institutions, drives IRB-aligned regulatory compliance and participant recruitment, and converts clinical data operations into peer-reviewed research published and accepted across AMIA and Nature-affiliated journals.</p>
               <a className="text-link" href="https://medicine.yale.edu/lab/fodeh/lab-members/" target="_blank" rel="noreferrer">Meet the Fodeh Lab team <ArrowUpRight size={16} /></a>
             </div>
           </div>
 
           <div className="focus-grid">
             {[
-              [<Microscope />, 'Research operations', 'Coordinating timelines, deliverables, data workflows, reporting, and documentation across grant-funded research initiatives.'],
-              [<Sparkles />, 'Grant management', 'Tracking budgets, expenses, subawards, milestones, NIH RPPR reporting, and PCORI progress reporting.'],
-              [<HeartHandshake />, 'Health equity experience', 'Contributing to demographic data-standard assessment and public-facing health communication.'],
-              [<ShieldCheck />, 'Quality & compliance', 'Experience with clinical data auditing, protocol adherence, documentation, and corrective training.']
+              [<ShieldCheck />, 'Program governance & compliance', 'HIPAA compliance, IRB protocol adherence, informed consent preparation, audit-ready documentation, and quality control auditing.'],
+              [<Sparkles />, 'Financial & grant stewardship', 'Multi-grant budget development and reconciliation across a $4.5M NIH R01 / PCORI portfolio, subaward tracking, NIH RPPR and PCORI reporting.'],
+              [<Microscope />, 'Team leadership & development', 'Building and mentoring an 8-person research team, onboarding design, and cross-functional issue resolution.'],
+              [<HeartHandshake />, 'Stakeholder & governance', 'Community Advisory Board coordination and multi-institutional liaison across Yale, Cleveland Clinic, VHA, and TXACC.']
             ].map(([icon, title, text]) => (
               <article className="focus-card reveal" key={String(title)}>
                 <div className="icon-box">{icon}</div><h3>{title}</h3><p>{text}</p>
@@ -117,12 +117,14 @@ function App() {
             <div className="paper-label"><BookOpen size={18} /> Featured publication</div>
             <div className="feature-content">
               <div>
-                <span className="status published">Peer reviewed · 2026</span>
+                <span className="status published">Published · AMIA · 2026</span>
                 <h3>{publications[0].title}</h3>
                 <p>{publications[0].summary}</p>
                 <div className="contribution"><Check size={16} /> Srivani’s credited contribution: {publications[0].contribution}</div>
               </div>
-              <a className="circle-link" href={publications[0].url} target="_blank" rel="noreferrer" aria-label="Read featured publication"><ArrowUpRight /></a>
+              {publications[0].url && (
+                <a className="circle-link" href={publications[0].url} target="_blank" rel="noreferrer" aria-label="Read featured publication"><ArrowUpRight /></a>
+              )}
             </div>
           </div>
           <div className="publication-grid">
@@ -133,7 +135,10 @@ function App() {
                 <h3>{pub.title}</h3>
                 <p>{pub.summary}</p>
                 {pub.contribution && <small>Credited contribution: {pub.contribution}</small>}
-                <div className="paper-footer"><span>{pub.date}</span><a href={pub.url} target="_blank" rel="noreferrer" aria-label={`Open ${pub.title}`}><ExternalLink size={17} /></a></div>
+                <div className="paper-footer">
+                  <span>{pub.date}</span>
+                  {pub.url && <a href={pub.url} target="_blank" rel="noreferrer" aria-label={`Open ${pub.title}`}><ExternalLink size={17} /></a>}
+                </div>
               </article>
             ))}
           </div>
@@ -178,6 +183,8 @@ function App() {
               <div className="recognition-item"><span>2022–24</span><div><h3>Recovery Service Associate</h3><p>American Red Cross · Disaster and Humanitarian Relief</p></div></div>
               <div className="recognition-item"><span>2022–24</span><div><h3>Student leadership</h3><p>Public Health Association and Student Advisory Board, University of New Haven</p></div></div>
               <div className="certification-box"><ShieldCheck /><div><h3>Good Clinical Practice</h3><p>National Institute on Drug Abuse · Valid through Aug 2027</p></div></div>
+              <div className="certification-box"><ShieldCheck /><div><h3>CITI Biomedical Research & Human Subjects Protection</h3><p>Collaborative Institutional Training Initiative</p></div></div>
+              <div className="certification-box"><ShieldCheck /><div><h3>Annual HIPAA Refresher</h3><p>Certification</p></div></div>
               <div className="certification-box"><ShieldCheck /><div><h3>Emergency Management</h3><p>Federal Emergency Management Agency</p></div></div>
             </div>
           </div>
@@ -195,7 +202,7 @@ function App() {
           <div className="contact-content reveal">
           <div><h2>Connect with Srivani.</h2><p>For professional conversations related to public-health programs, research operations, health equity, or clinical data quality.</p></div>
             <div className="contact-actions">
-              <a href="mailto:srivani.talakokkul@yale.edu"><Mail /> <span><small>Email</small>srivani.talakokkul@yale.edu</span><ArrowUpRight /></a>
+              <a href="mailto:talakokkulsrivani06@gmail.com"><Mail /> <span><small>Email</small>talakokkulsrivani06@gmail.com</span><ArrowUpRight /></a>
               <a href="https://www.linkedin.com/in/srivani-talakokkul-712452241" target="_blank" rel="noreferrer"><Link /> <span><small>LinkedIn</small>Connect professionally</span><ArrowUpRight /></a>
             </div>
           </div>
