@@ -26,9 +26,10 @@ export const experience: Experience[] = [
     highlights: [
       'Steers grant and financial operations across the EPPC and PVminer initiatives totaling $4.5M, building budgets, tracking expenses, and reconciling accounts.',
       'Assembles and delivers 5–8 formal sponsor reports annually, including NIH RPPRs and semiannual PCORI progress reports, hitting every submission deadline on time.',
+      'Coordinates and manages Outlook calendars for the Principal Investigator and postdoctoral researchers, keeping recurring stakeholder and team meetings conflict-free.',
       'Recruited, onboarded, and mentors a core research team of 8 — five postdoctoral researchers, one research associate, one PhD rotation student, and one intern.',
       'Drafted the IRB-aligned informed consent form for the EPPC R01 study and personally secured consent from and enrolled 40 patients within 3–4 weeks.',
-      'Facilitates 50+ recurring stakeholder meetings over 18 months with an 8–9-member Community Advisory Board and serves as central liaison across Yale, Cleveland Clinic, VHA, and TXACC.',
+      'Facilitates 50+ recurring stakeholder meetings over 18 months with a 9-member Community Advisory Board, recording and distributing meeting minutes, and serves as central liaison across Yale, Cleveland Clinic, VHA, and TXACC.',
       'Spearheaded 70–75% of the annotation underpinning the EPPC project, manually annotating 3,500+ patient messages (~10,000 sentences) into structured, analysis-ready data.',
       'Authored the EPPC annotation guidelines and codebook grounded in the Roter Interaction Analysis System (RIAS), directly enabling the benchmark reported in EPPCMinerBen.',
       'Designed the annotation framework for the PVminer grant, feeding the tool development behind the PVminer and PVminerLLM publications.',
@@ -37,10 +38,10 @@ export const experience: Experience[] = [
   },
   {
     role: 'Office Administrator',
-    organization: 'Quality Staffing Home Care Agency',
+    organization: 'Quality Staffing Home Care Inc.',
     period: 'Oct 2024 — Jan 2025',
     location: 'United States',
-    summary: 'Ran core office operations, payroll, licensing, and records for a home-care agency, part-time and concurrent with the Yale Program Manager role.',
+    summary: 'Ran core office operations, payroll, licensing, and records for a home-care agency.',
     highlights: [
       'Ran core office operations using SharePoint and MS Forms to schedule appointments, coordinate calendars, and manage correspondence for leadership.',
       'Processed biweekly payroll for 50+ employees across administrative and caregiver departments, delivering on-time pay across 10 consecutive pay cycles.',
@@ -178,6 +179,6 @@ export const skillGroups = [
   { title: 'Financial & grant stewardship', items: ['Multi-grant budget development & reconciliation', 'Subaward & milestone tracking', 'NIH RPPR & PCORI sponsor reporting', 'Procurement & invoice processing', 'Cost-conscious vendor management'] },
   { title: 'Program & research operations', items: ['Multi-institutional coordination', 'Participant recruitment & enrollment', 'SOP & process development', 'Priority management', 'Risk mitigation'] },
   { title: 'Team leadership & development', items: ['Team building & supervision', 'Onboarding design', 'Performance & assignment management', 'Cross-functional issue resolution'] },
-  { title: 'Data & technical proficiency', items: ['REDCap', 'Epic', 'OnCore', 'Power BI', 'Excel / Word / PowerPoint / Outlook / SharePoint', 'MS Forms', 'Clinical data annotation & QC', 'EHR-based documentation'] },
+  { title: 'Data & technical proficiency', items: ['REDCap', 'Epic', 'OnCore', 'Power BI', 'R', 'Excel / Word / PowerPoint / Outlook / SharePoint', 'MS Forms', 'Clinical data annotation & QC', 'EHR-based documentation'] },
   { title: 'Stakeholder & governance', items: ['Community Advisory Board coordination', 'Multi-institutional liaison (Yale, Cleveland Clinic, VHA, TXACC)', 'Manuscript & publication support'] }
 ]
