@@ -22,13 +22,14 @@ export const experience: Experience[] = [
     organization: 'Yale University · Emergency Medicine · Fodeh Lab',
     period: 'Nov 2024 — Present',
     location: 'New Haven, Connecticut',
-    summary: 'Stewards a $4.5M portfolio spanning an NIH R01 (EPPC) and a PCORI-funded study (PVminer), sustaining a 100% on-time record for budget and sponsor reporting across two consecutive years while coordinating 4 partner institutions.',
+    summary: 'Built and now leads a 10-person research team from the ground up, sustaining a $4.5M portfolio spanning an NIH R01 (EPPC) and a PCORI-funded study (PVminer) across two consecutive years of 100% on-time sponsor reporting.',
     highlights: [
       'Steers grant and financial operations across the EPPC and PVminer initiatives totaling $4.5M, building budgets, tracking expenses, and reconciling accounts.',
-      'Assembles and delivers 5–8 formal sponsor reports annually, including NIH RPPRs and semiannual PCORI progress reports, hitting every submission deadline on time.',
+      'Assembles and delivers 8 formal sponsor reports annually, including NIH RPPRs and semiannual PCORI progress reports, hitting every submission deadline on time.',
       'Coordinates and manages Outlook calendars for the Principal Investigator and postdoctoral researchers, keeping recurring stakeholder and team meetings conflict-free.',
-      'Recruited, onboarded, and mentors a core research team of 8 — five postdoctoral researchers, one research associate, one PhD rotation student, and one intern.',
-      'Drafted the IRB-aligned informed consent form for the EPPC R01 study and personally secured consent from and enrolled 40 patients within 3–4 weeks.',
+      'Recruited, onboarded, and mentors a core research team of 10 built from the ground up — seven postdoctoral researchers, one research associate, one PhD rotation student, and one intern.',
+      'Drafted the IRB-aligned informed consent form and compiled IRB submission materials, including a Qualtrics survey, supporting protocol approval for the EPPC R01 study.',
+      'Personally secured informed consent from and enrolled 40 patients within 3–4 weeks for the EPPC R01 study, closing the consent-and-recruitment gap on the research team.',
       'Facilitates 50+ recurring stakeholder meetings over 18 months with a 9-member Community Advisory Board, recording and distributing meeting minutes, and serves as central liaison across Yale, Cleveland Clinic, VHA, and TXACC.',
       'Spearheaded 70–75% of the annotation underpinning the EPPC project, manually annotating 3,500+ patient messages (~10,000 sentences) into structured, analysis-ready data.',
       'Authored the EPPC annotation guidelines and codebook grounded in the Roter Interaction Analysis System (RIAS), directly enabling the benchmark reported in EPPCMinerBen.',
@@ -175,10 +176,10 @@ export const publications: Publication[] = [
 ]
 
 export const skillGroups = [
-  { title: 'Program governance & compliance', items: ['HIPAA compliance', 'IRB protocol adherence', 'Informed consent preparation', 'Regulatory & sponsor compliance', 'Audit-ready documentation', 'Quality control auditing', 'Corrective action planning'] },
-  { title: 'Financial & grant stewardship', items: ['Multi-grant budget development & reconciliation', 'Subaward & milestone tracking', 'NIH RPPR & PCORI sponsor reporting', 'Procurement & invoice processing', 'Cost-conscious vendor management'] },
-  { title: 'Program & research operations', items: ['Multi-institutional coordination', 'Participant recruitment & enrollment', 'SOP & process development', 'Priority management', 'Risk mitigation'] },
-  { title: 'Team leadership & development', items: ['Team building & supervision', 'Onboarding design', 'Performance & assignment management', 'Cross-functional issue resolution'] },
-  { title: 'Data & technical proficiency', items: ['REDCap', 'Epic', 'OnCore', 'Power BI', 'R', 'Excel / Word / PowerPoint / Outlook / SharePoint', 'MS Forms', 'Clinical data annotation & QC', 'EHR-based documentation'] },
-  { title: 'Stakeholder & governance', items: ['Community Advisory Board coordination', 'Multi-institutional liaison (Yale, Cleveland Clinic, VHA, TXACC)', 'Manuscript & publication support'] }
+  { title: 'Team building & development', items: ['End-to-end team construction', 'Onboarding architecture', 'Performance coaching', 'Succession-ready training design', 'Cross-functional conflict resolution'] },
+  { title: 'Research program execution', items: ['Multi-site protocol implementation', 'Annotation methodology design', 'Participant enrollment strategy', 'SOP authorship', 'Workstream prioritization under competing deadlines'] },
+  { title: 'Regulatory & compliance leadership', items: ['IRB protocol development', 'Informed consent design', 'HIPAA-governed data handling', 'Audit preparation', 'Corrective action design'] },
+  { title: 'Grant & fiscal oversight', items: ['Multi-award budget architecture', 'Federal sponsor reporting (NIH/PCORI)', 'Subaward governance', 'Procurement & vendor accountability'] },
+  { title: 'Institutional & external governance', items: ['Advisory board facilitation', 'Multi-institutional partnership management', 'Manuscript & publication pipeline support'] },
+  { title: 'Data systems & analytics', items: ['REDCap', 'Epic', 'OnCore', 'Power BI', 'R', 'Clinical data annotation methodology', 'EHR documentation standards'] }
 ]

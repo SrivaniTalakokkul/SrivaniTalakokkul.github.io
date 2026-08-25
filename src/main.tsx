@@ -49,7 +49,7 @@ function App() {
           <div className="hero-copy reveal is-visible">
             <p className="eyebrow"><span /> Public health × research operations × health data</p>
             <h1>Public health, research, and the <em>work between.</em></h1>
-            <p className="hero-intro">Srivani Talakokkul, MPH, is a Healthcare Program Manager with 7+ years of experience across research operations, clinical care delivery, public health, and quality management — currently stewarding a $4.5M portfolio at Yale University.</p>
+            <p className="hero-intro">Srivani Talakokkul, MPH, is a physician-turned-healthcare Program Manager with 7+ years spanning bedside clinical care, clinical operations, public health, and federally funded research administration — now leading a 10-person research team built from the ground up and a $4.5M NIH/PCORI portfolio at Yale University.</p>
             <div className="hero-actions">
               <a className="button primary" href="#research">Explore research <ArrowDown size={17} /></a>
               <a className="button secondary" href="mailto:talakokkulsrivani06@gmail.com">Start a conversation <ArrowUpRight size={17} /></a>
@@ -74,10 +74,10 @@ function App() {
         </section>
 
         <section className="impact-strip" aria-label="Career highlights">
-          <div><strong>$4.5M</strong><span>Portfolio managed</span></div>
-          <div><strong>100%</strong><span>On-time sponsor reporting</span></div>
-          <div><strong>4</strong><span>Institutions coordinated</span></div>
-          <div><strong>7</strong><span>Publications supported</span></div>
+          <div><strong>$4.5M</strong><span>Portfolio led</span></div>
+          <div><strong>10</strong><span>Person research team built from the ground up</span></div>
+          <div><strong>AMIA</strong><span>Published annotation methodology authored</span></div>
+          <div><strong>Physician → PM</strong><span>Career transition</span></div>
         </section>
 
         <section className="section about" id="about">
@@ -87,19 +87,19 @@ function App() {
               <h2>Clinical experience.<br />Public-health practice.<br />Research operations.</h2>
             </div>
             <div className="about-copy reveal">
-              <p className="lead">Srivani’s experience spans clinical care, public-health programs, research quality, grant operations, and program management.</p>
+              <p className="lead">Srivani is a physician-turned-Program Manager whose path spans bedside clinical care, public-health programs, research quality, grant operations, and program management.</p>
               <p>Her background includes Ayurvedic medicine and clinical practice, an MPH with Global Health certification, a health-equity internship, and cancer-data quality work.</p>
-              <p>At Yale, she stewards a $4.5M portfolio spanning an NIH R01 (EPPC) and a PCORI-funded study (PVminer), sustaining a 100% on-time record for sponsor reporting across two consecutive years. She builds and mobilizes an 8-person research team, coordinates 4 partner institutions, drives IRB-aligned regulatory compliance and participant recruitment, and converts clinical data operations into peer-reviewed research published and accepted across AMIA and Nature-affiliated journals.</p>
+              <p>Since transitioning out of direct patient care, she has built and now leads a 10-person multidisciplinary research team at Yale University from the ground up, sustaining a $4.5M portfolio spanning an NIH R01 (EPPC) and a PCORI-funded study (PVminer). She authored the annotation methodology underpinning a published AMIA benchmark, personally closed a consent-and-recruitment gap on an active R01 study, and governs financial, regulatory, and cross-institutional operations across four partner sites.</p>
               <a className="text-link" href="https://medicine.yale.edu/lab/fodeh/lab-members/" target="_blank" rel="noreferrer">Meet the Fodeh Lab team <ArrowUpRight size={16} /></a>
             </div>
           </div>
 
           <div className="focus-grid">
             {[
-              [<ShieldCheck />, 'Program governance & compliance', 'HIPAA compliance, IRB protocol adherence, informed consent preparation, audit-ready documentation, and quality control auditing.'],
-              [<Sparkles />, 'Financial & grant stewardship', 'Multi-grant budget development and reconciliation across a $4.5M NIH R01 / PCORI portfolio, subaward tracking, NIH RPPR and PCORI reporting.'],
-              [<Microscope />, 'Team leadership & development', 'Building and mentoring an 8-person research team, onboarding design, and cross-functional issue resolution.'],
-              [<HeartHandshake />, 'Stakeholder & governance', 'Community Advisory Board coordination and multi-institutional liaison across Yale, Cleveland Clinic, VHA, and TXACC.']
+              [<Microscope />, 'Team building & development', 'End-to-end construction of a 10-person research team built from the ground up, onboarding architecture, and performance coaching.'],
+              [<ShieldCheck />, 'Regulatory & compliance leadership', 'IRB protocol development, informed consent design, HIPAA-governed data handling, and audit preparation.'],
+              [<Sparkles />, 'Grant & fiscal oversight', 'Multi-award budget architecture across a $4.5M NIH/PCORI portfolio, federal sponsor reporting, and subaward governance.'],
+              [<HeartHandshake />, 'Institutional & external governance', 'Advisory board facilitation and multi-institutional partnership management across Yale, Cleveland Clinic, VHA, and TXACC.']
             ].map(([icon, title, text]) => (
               <article className="focus-card reveal" key={String(title)}>
                 <div className="icon-box">{icon}</div><h3>{title}</h3><p>{text}</p>
