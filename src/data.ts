@@ -29,7 +29,7 @@ export const experience: Experience[] = [
       'Coordinates and manages Outlook calendars for the Principal Investigator and postdoctoral researchers, keeping recurring stakeholder and team meetings conflict-free.',
       'Recruited, onboarded, and mentors a core research team of 10 built from the ground up — seven postdoctoral researchers, one research associate, one PhD rotation student, and one intern.',
       'Drafted the IRB-aligned informed consent form and compiled IRB submission materials, including a Qualtrics survey, supporting protocol approval for the EPPC R01 study.',
-      'Personally secured informed consent from and enrolled 40 patients within 3–4 weeks for the EPPC R01 study, closing the consent-and-recruitment gap on the research team.',
+      'Personally secured informed consent from and enrolled 40 patients within 4–5 weeks for the EPPC R01 study, closing the consent-and-recruitment gap on the research team.',
       'Facilitates 50+ recurring stakeholder meetings over 18 months with a 9-member Community Advisory Board, recording and distributing meeting minutes, and serves as central liaison across Yale, Cleveland Clinic, VHA, and TXACC.',
       'Spearheaded 70–75% of the annotation underpinning the EPPC project, manually annotating 3,500+ patient messages (~10,000 sentences) into structured, analysis-ready data.',
       'Authored the EPPC annotation guidelines and codebook grounded in the Roter Interaction Analysis System (RIAS), directly enabling the benchmark reported in EPPCMinerBen.',
@@ -38,7 +38,7 @@ export const experience: Experience[] = [
     ]
   },
   {
-    role: 'Office Administrator',
+    role: 'Quality Assurance and Compliance Manager',
     organization: 'Quality Staffing Home Care Inc.',
     period: 'Oct 2024 — Jan 2025',
     location: 'United States',
